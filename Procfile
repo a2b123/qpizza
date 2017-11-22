@@ -1,1 +1,1 @@
-web: gunicorn foodtasker.wsgi --log-file -
+web: gunicorn qpizza.wsgi --log-file -
