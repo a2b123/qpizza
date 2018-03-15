@@ -155,11 +155,15 @@ AUTHENTICATION_BACKENDS = (
 SOCIAL_AUTH_FACEBOOK_KEY = '161025647965501'
 SOCIAL_AUTH_FACEBOOK_SECRET = 'd3cb4aa8027d7eedc071a52c09ba92bd'
 
+#Foodtasker Example Project
+# SOCIAL_AUTH_FACEBOOK_KEY = '1412927995482679'
+# SOCIAL_AUTH_FACEBOOK_SECRET = '8c2d0648731873026d90de7a95af498b'
+
 # Define SOCIAL_AUTH_FACEBOOK_SCOPE to get extra permissions from facebook. Email is not sent by default, to get it, you must request the email permission:
-SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
-SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
-    'fields': 'id, name, email'
-}
+# SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+# SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
+#     'fields': 'id, name, email'
+# }
 
 SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.social_details',
@@ -173,4 +177,6 @@ SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.load_extra_data',
     'social_core.pipeline.user.user_details',
 )
+
+STRIPE_API_KEY = 'sk_test_HpYq62WaPM0Q9j46pWPIlRxK'
 
